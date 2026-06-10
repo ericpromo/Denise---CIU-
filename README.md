@@ -30,3 +30,4 @@ Para ejecutar este proyecto en tu entorno local, seguí estos pasos:
 
 # Integrantes: Riccardi Eric Daniel, 47294890
 
+vercel link : https://denise-9io4mdupp-eric-riccardi-s-projects.vercel.app/
