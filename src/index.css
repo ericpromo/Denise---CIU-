@@ -1,0 +1,161 @@
+/* src/index.css */
+
+/* === VARIABLES PARA MODO CLARO (Default) === */
+:root {
+  --bg-principal: #ffffff;      /* Blanco puro */
+  --bg-secundario: #fff9ed;     /* Arena muy suave para tarjetas/nav */
+  --card-bg: #f3e6c0;           /* Crema ligera para tarjetas en modo claro */
+  --filter-bg: #f7edde;         /* Fondo del filtro en modo claro */
+  --texto-principal: #4c4231;   /* Marrón suave para texto */
+  --texto-secundario: #8c7e61;  /* Marrón claro para detalles */
+  --color-acento: #556b2f;      /* Verde Olivo */
+  --color-acento-hover: #3e4f22;/* Verde Olivo más oscuro para hover */
+  --nav-bg: #f2e7c6;            /* Arena claro para el navbar */
+  --nav-texto: #4c4231;
+}
+
+/* === VARIABLES PARA MODO OSCURO === */
+html.dark-mode,
+body.dark-mode {
+  --bg-principal: #121212;      /* Gris muy oscuro */
+  --bg-secundario: #1e1e1e;     /* Gris un poco más claro para tarjetas */
+  --card-bg: #2a2a2a;           /* Gris claro para tarjetas en modo oscuro */
+  --filter-bg: #232323;         /* Fondo del filtro en modo oscuro */
+  --texto-principal: #f1f1f1;   /* Blanco tiza */
+  --texto-secundario: #aaaaaa;  /* Gris claro */
+  --color-acento: #722f37;      /* Vino Tinto */
+  --color-acento-hover: #5a252b;/* Vino Tinto más oscuro */
+  --nav-bg: #1a1a1a;            /* Negro/Gris profundo para el navbar */
+  --nav-texto: #f1f1f1;
+}
+
+/* === APLICACIÓN GLOBAL === */
+body {
+  background-color: var(--bg-principal);
+  color: var(--texto-principal);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* === CLASES UTILITARIAS PERSONALIZADAS === */
+.bg-theme-card {
+  background-color: var(--bg-secundario) !important;
+  color: var(--texto-principal) !important;
+  border-color: rgba(0,0,0,0.1);
+}
+
+.text-theme {
+  color: var(--texto-principal) !important;
+}
+
+/* Navbar */
+.navbar-theme {
+  background-color: var(--nav-bg) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Filtro de productos */
+.filter-panel {
+  background-color: var(--filter-bg) !important;
+  color: var(--texto-principal);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.filter-panel .form-control,
+.filter-panel .form-select {
+  background-color: var(--bg-secundario);
+  color: var(--texto-principal);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.filter-panel .form-control::placeholder {
+  color: var(--texto-secundario);
+}
+
+.theme-panel {
+  background-color: var(--card-bg) !important;
+  color: var(--texto-principal);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.table-theme {
+  background-color: transparent;
+  color: var(--texto-principal);
+}
+
+.table-theme th,
+.table-theme td {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.table-theme thead th {
+  background-color: var(--bg-secundario);
+  color: var(--texto-principal);
+}
+
+.table-theme tbody tr {
+  background-color: var(--card-bg);
+}
+
+.form-control,
+.form-select {
+  background-color: var(--bg-secundario) !important;
+  color: var(--texto-principal) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.form-control::placeholder,
+.form-select option {
+  color: var(--texto-secundario) !important;
+}
+
+.navbar-theme .navbar-brand,
+.navbar-theme .nav-link {
+  color: var(--nav-texto) !important;
+}
+
+/* Tarjetas con tema claro/oscuro */
+.card,
+.bg-theme-card,
+.card .card-body {
+  background-color: var(--card-bg) !important;
+  color: var(--texto-principal) !important;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-theme .nav-link:hover {
+  color: var(--color-acento) !important;
+}
+
+/* Botones con color de Acento */
+.btn-acento,
+.btn-primary {
+  background-color: var(--color-acento) !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+
+.btn-acento:hover,
+.btn-primary:hover {
+  background-color: var(--color-acento-hover) !important;
+  color: white !important;
+}
+
+.btn-acento {
+  border: none;
+}
+
+.table-theme tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-mode .table-theme tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.table-theme tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+html.dark-mode .table-theme tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
