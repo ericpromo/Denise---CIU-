@@ -1,7 +1,7 @@
 # Mi Tienda Online 
 
 ##  Descripción
-"Mi Tienda Online" es una aplicación web de comercio electrónico (E-commerce) desarrollada como una Single Page Application (SPA). Permite a los usuarios explorar un catálogo de indumentaria, filtrar productos por categoría o nombre, visualizar el detalle de cada prenda y gestionar un carrito de compras interactivo. Además, cuenta con un diseño responsivo y la funcionalidad de alternar entre un Modo Claro (Verde Olivo) y un Modo Oscuro (Vino Tinto) para mejorar la experiencia de usuario.
+"Denise" es una aplicación web que   permite a los usuarios explorar un catálogo de indumentaria, filtrar productos por categoría o nombre, visualizar el detalle de cada prenda y gestionar un carrito de compras interactivo. Además, cuenta con un diseño responsivo y la funcionalidad de alternar entre un Modo Claro (Verde Olivo) y un Modo Oscuro (Vino Tinto) para mejorar la experiencia de usuario.
 
 ##  Tecnologías utilizadas
 Este proyecto fue construido utilizando las siguientes tecnologías y herramientas:
@@ -18,7 +18,7 @@ Para ejecutar este proyecto en tu entorno local, seguí estos pasos:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [URL_DE_TU_REPOSITORIO]
+   git clone https://github.com/ericpromo/Denise---CIU-
 
 2. Instalar Dependencias 
     npm install
